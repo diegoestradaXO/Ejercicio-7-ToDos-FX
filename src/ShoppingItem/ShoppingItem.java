@@ -19,19 +19,19 @@ public class ShoppingItem {
         this.quantity.set(quantity);
         this.price.set(price);
     }
-    public String getName() {
+    public String getName() {//Obtiene el nombre del producto
         return this.name.get();
     }
 
-    public int getQuantity() {
+    public int getQuantity() {//obtiene la cantidad de un producto
         return this.quantity.get();
     }
 
-    public double getPrice() {
+    public double getPrice() {//obtiene el precio
         return this.price.get();
     }
 
-    public boolean getState() {
+    public boolean getState() {//estado, puede ser pendiente o completado
         return this.pending.get();
     }
     public void changeState(){

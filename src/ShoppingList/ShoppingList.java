@@ -15,31 +15,32 @@ public class ShoppingList {
         this.name = new SimpleStringProperty();
         this.description= new SimpleStringProperty();
         this.date = new SimpleStringProperty();
-        this.shoppingItems= new ArrayList<>();
+
         this.name.set(name);
         this.description.set(description);
         this.date.set(date);
+        this.shoppingItems= new ArrayList<>();
 
     }
-    public String getName(){
+    public String getName(){//obtiene el nombre de la lista
         return this.name.get();
     }
 
-    public String getDescription(){
+    public String getDescription(){//obtiene la descripcion
         return this.description.get();
     }
-    public boolean addProduct(ShoppingItem product){//Agrega un producto
+    public boolean addProduct(ShoppingItem product){//Mete un producto dentro de la lista
         if(findShoppingItem(product.getName())){
-            return false;
+            return false;//no agregar repetidos
         }
         else{
-            this.shoppingItems.add(product);
+            this.shoppingItems.add(product);//si no lo encuentra, lo agrega
             return true;
         }
     }
-    public boolean findShoppingItem(String name){
+    public boolean findShoppingItem(String name){//busqueda de un producto
         for (ShoppingItem item : this.shoppingItems){
-            if(item.getName().equals(name)){
+            if(item.getName() == (name)){
                 return true;
             }
         }

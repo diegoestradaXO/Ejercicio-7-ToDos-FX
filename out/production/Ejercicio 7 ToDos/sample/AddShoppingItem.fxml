@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddShoppingItemController">
+   <children>
+      <Label layoutX="101.0" layoutY="37.0" prefHeight="48.0" prefWidth="225.0" text="Nuevo articulo">
+         <font>
+            <Font name="BebasNeue" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="134.0" text="Nombre">
+         <font>
+            <Font name="BebasNeue" size="21.0" />
+         </font>
+      </Label>
+      <TextField id="nameInput" layoutX="167.0" layoutY="136.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField id="quantityInput" layoutX="167.0" layoutY="175.0" />
+      <Label layoutX="56.0" layoutY="173.0" text="Cantidad">
+         <font>
+            <Font name="BebasNeue" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="215.0" text="precio">
+         <font>
+            <Font name="BebasNeue" size="21.0" />
+         </font>
+      </Label>
+      <TextField id="priceInput" layoutX="167.0" layoutY="217.0" />
+      <Button id="createButton" layoutX="305.0" layoutY="276.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="130.0" text="Crear articulo" />
+   </children>
+</AnchorPane>
